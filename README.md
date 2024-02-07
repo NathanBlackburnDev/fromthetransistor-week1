@@ -28,4 +28,12 @@ Diagrams use conventional current whereby the current flows out of the positive 
 
 ![NPN w current](https://github.com/NathanBlackburnDev/transistors/assets/116575260/277ef9ad-d7ce-41cd-8bcc-cb37ceb13adc) ![PNP w current](https://github.com/NathanBlackburnDev/transistors/assets/116575260/80db2f88-9588-4a3e-9a20-426a2c0009db)
 
+### Transistor materials
+Transistors are made out of semi conductor materials such as sillicon and germanium, however both materials have almost no free moving electrons so they are doped with impuraties and other materials which changes its electrical property. This is called _P-type_ and _N-type_ doping. When the doped sillicon have been merged to make the P-N junction, one side the pieces will have no electrons (P side) and the other (N side), too many electrons causing a _depletion region_. In the depletion region some of the excess electrons from the N-side will move over to the holes on the P-side and vice versa. This migration will cause a build up with electrons and holes on opposite sides. The electrons that move over to the P-side become slightly negatively charged and the holes that move over to the N-side become slightly positively charged. This build up then creates a slightly negatively and slightly positively charged region which creates an electic field, preventing any electrons from coming through. The difference in this electric field is typically 0.7v.
+
+### Forward bias
+
+### Junctions
+We combine the now doped sillicon materials to form the P-N junction. We can combine the P-type and N-type sillicon to make the NPN or PNP transistors.
+
 On the top in the NPN, you can see the current (green arrows) flowing out of the negative side of the battery and inside the positive, but on the bottom in the PNP the opposite is happening where the current goes into the negative side and out the positive.

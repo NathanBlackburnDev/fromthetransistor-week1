@@ -13,4 +13,4 @@ Collector current = β * Base current
 Base current = collector current / β
 ### How do transistors work?
 There are two main types of bipolar-junction transistors (BJT), the PNP and the NPN. 
-![NPN ciruit diagram]([https://github.com/NathanBlackburnDev/transistors/](https://github.com/NathanBlackburnDev/transistors/blob/main/images/NPN.png)https://github.com/NathanBlackburnDev/transistors/blob/main/images/NPN.png)
+![NPN ciruit diagram](images/PNP.jpg)

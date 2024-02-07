@@ -14,8 +14,12 @@ Base current = collector current / β
 ### How do transistors work?
 There are two main types of bipolar-junction transistors (BJT), the PNP and the NPN. 
 ![NPN](https://github.com/NathanBlackburnDev/transistors/assets/116575260/e9b95c05-a7db-4883-b496-87589eb15a8f)
+
 With the NPN you have both the main circuit and the control circuit, both are connected to the positive side of the battery. The main circuit is off until we turn the switch on, current will flow through both wires to the transistor, however if you remove the main circuit (highlighted in green) the control circuit LED will still turn on when the switch is pressed as the current is returning to the battery through the transistor. The control circuit has 5mA flowing into the base pin, the main circuit has 20mA flowing into the collector and the current coming out of the emitter is 25mA, meaning that all the mA in this entire circuit all add together.
 ![PNP](https://github.com/NathanBlackburnDev/transistors/assets/116575260/48db5c7e-bd22-4aee-a0d9-05745c10ff8c)
+
 In this PNP circuit, the emitter is connected to positive of the battery rather than the emitter being connected to the negative of the battery like the NPN circuit. The main circuit is off until you press on with the switch, with this circuit some of the current flows out of the base and into the battery (the black wire). If you remove the main circuit (again, highlighted in green) the main circuit will still turn on. When the switch is on, there are 25mA flowing into the emitter, the main circuit has 20mA flowing through, out of the collector and the control circuit has 5mA flowing through out of the base. The current therefore divides in the PNP transistor, as opposed to the NPN transistor where the current is all combined.
+
 ![NPN w current](https://github.com/NathanBlackburnDev/transistors/assets/116575260/277ef9ad-d7ce-41cd-8bcc-cb37ceb13adc) ![PNP w current](https://github.com/NathanBlackburnDev/transistors/assets/116575260/80db2f88-9588-4a3e-9a20-426a2c0009db)
+
 On the left in the NPN, you can see the current (green arrows) flowing out of the negative side of the battery and inside the positive, but on the right in the PNP the opposite is happening where the current goes into the negative side and out the positive.

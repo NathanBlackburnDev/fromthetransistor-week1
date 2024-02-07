@@ -22,4 +22,4 @@ In this PNP circuit, the emitter is connected to positive of the battery rather 
 
 ![NPN w current](https://github.com/NathanBlackburnDev/transistors/assets/116575260/277ef9ad-d7ce-41cd-8bcc-cb37ceb13adc) ![PNP w current](https://github.com/NathanBlackburnDev/transistors/assets/116575260/80db2f88-9588-4a3e-9a20-426a2c0009db)
 
-On the left in the NPN, you can see the current (green arrows) flowing out of the negative side of the battery and inside the positive, but on the right in the PNP the opposite is happening where the current goes into the negative side and out the positive.
+On the top in the NPN, you can see the current (green arrows) flowing out of the negative side of the battery and inside the positive, but on the bottom in the PNP the opposite is happening where the current goes into the negative side and out the positive.

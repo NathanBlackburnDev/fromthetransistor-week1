@@ -22,6 +22,10 @@ With the NPN you have both the main circuit and the control circuit, both are co
 
 In this PNP circuit, the emitter is connected to positive of the battery rather than the emitter being connected to the negative of the battery like the NPN circuit. The main circuit is off until you press on with the switch, with this circuit some of the current flows out of the base and into the battery (the black wire). If you remove the main circuit (again, highlighted in green) the main circuit will still turn on. When the switch is on, there are 25mA flowing into the emitter, the main circuit has 20mA flowing through, out of the collector and the control circuit has 5mA flowing through out of the base. The current therefore divides in the PNP transistor, as opposed to the NPN transistor where the current is all combined.
 
+Diagrams use conventional current whereby the current flows out of the positive side of the battery and then out of the emitter into the negative side of the battery, but electron flow, where its actually the opposite and the current flows out of the negative side into the emitter and then out of the current and the base into the positive side of the battery.
+
+
+
 ![NPN w current](https://github.com/NathanBlackburnDev/transistors/assets/116575260/277ef9ad-d7ce-41cd-8bcc-cb37ceb13adc) ![PNP w current](https://github.com/NathanBlackburnDev/transistors/assets/116575260/80db2f88-9588-4a3e-9a20-426a2c0009db)
 
 On the top in the NPN, you can see the current (green arrows) flowing out of the negative side of the battery and inside the positive, but on the bottom in the PNP the opposite is happening where the current goes into the negative side and out the positive.

@@ -77,7 +77,7 @@ Some logic gates:
 ![Screen Shot 2024-02-09 at 18 37 56 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/f7f284c0-cc89-420c-8487-3b532864cab7)
   
 ### Flip-flops
-
+Flip-flop is a circuit that maintains a state until directed by input to change the state. A basic flip-flop can be constructed using four-NAND or four-NOR gates. Flip flop is popuarly known as the basic digital memory circuit. It has 2 states, 1 and 0. A flip-flop is a sequential circuit that consists of single binary state of information/data. 
 ## What are FPGAs?
 Field Programmable Gate Arrays (FPGAs) are semiconductor devices that are based around a matrix of configurable logic blocks (CLBs) connected via programmable interconnects that allow the designer to connect blocks and configure them to perform everything from simple logic gates to complex functions. FPGAs can be reprogrammed to desired application or functionality requirements after manufacturing. This feature distinguishes FPGAs from Application Specific Integrated Circuits (ASIC), which are custom manufactured for specific design tasks. Although one-time programmable (OTP) FPGAs are available, the dominant types are SRAM based which can be reprogammed as the design evolves. They are referred to as 'field programmable' because they provide customers the ability to reconfigure the hardware to meet specific use case requirements after the manufacturing process. This allows for features upgrades and bug fixes to be solved in situ which is especially useful for remote deployment. Full SoC designs containing multiple processes can be put onto a single FPGA device.
 
@@ -110,10 +110,14 @@ When a device is connected to a battery, a reaction called a _electrochecmical r
 - Electrode: https://en.wikipedia.org/wiki/Electrode
 - Resistors: https://eepower.com/resistor-guide/resistor-fundamentals/what-is-a-resistor/#
 - Resistors/ohms law: https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/all
+- Gates: https://en.wikipedia.org/wiki/AND_gate
+- Gates: https://en.wikipedia.org/wiki/OR_gate
+- Gates: https://en.wikipedia.org/wiki/Inverter_(logic_gate)
 - Gates: https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:computers/xcae6f4a7ff015e7d:logic-gates-and-circuits/a/logic-gates
 - Gates: https://en.wikipedia.org/wiki/NAND_gate
 - Gates: https://logic.ly/lessons/xor-gate/
 - Gates: https://en.wikipedia.org/wiki/XOR_gate
+- Flip-flops: https://www.geeksforgeeks.org/flip-flop-types-their-conversion-and-applications/
 - Batteries: https://electronics.howstuffworks.com/everyday-tech/battery.htm
 - Capacitors: https://electronics.howstuffworks.com/capacitor.htm
 - FPGAs: https://ebics.net/how-fpgas-work/

@@ -53,11 +53,23 @@ A capacitor is similar to a battery, with the main difference being
 Computers user logic gates to transform the 1s and 0s from input wires. A logic gate accepts input then outputs a result based on their state.
 Some logic gates:
 - NOT: is an inveter. If input is 1 then output is 0 and vice versa
+  ![Screen Shot 2024-02-09 at 18 35 43 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/ca7825fe-8e92-4480-8cc2-79512cdd6424)
+
 - OR: as long as either input is 1 then output will be 1
+  ![Screen Shot 2024-02-09 at 18 36 13 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/755ec884-c94e-4391-9c12-ead3bd6ce196)
+
 - AND: both inputs need to be 1 for output to be 1, if both input is 0 or one input is 1 and the other 0 then output will be 0
+  ![Screen Shot 2024-02-09 at 18 36 36 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/d81e2e8a-e256-481b-866a-dda33b9f2f6e)
+
 - NAND (NOT AND): output 0 if all inputs are 1
+  ![Screen Shot 2024-02-09 at 18 37 14 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/6ca80383-9299-4090-8670-5d949af34f33)
+
 - XOR: output 1 only when one input out of its inputs is 1. If both inputs are 0 then output is 0, if both outputs are 1 then output is 0, if output is 1 0 then output is 1
-- NOR: 
+  ![Screen Shot 2024-02-09 at 18 37 36 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/8abe82b7-bcb8-4d82-8dc2-5c99532742ac)
+
+- NOR: o![Screen Shot 2024-02-09 at 18 37 56 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/f7f284c0-cc89-420c-8487-3b532864cab7)
+utput 1 is both inputs are 0. if one input is 1 and one is 0, output is 0. Is the inverse of AND
+  
 ### Flip-flops
 
 ## What are FPGAs?

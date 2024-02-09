@@ -50,6 +50,14 @@ The voltages between two points is equal to the current between the two points *
 ### Capacitors
 A capacitor is similar to a battery, with the main difference being 
 ### Logic gates
+Computers user logic gates to transform the 1s and 0s from input wires. A logic gate accepts input then outputs a result based on their state.
+Some logic gates:
+- NOT: is an inveter. If input is 1 then output is 0 and vice versa
+- OR: as long as either input is 1 then output will be 1
+- AND: both inputs need to be 1 for output to be 1, if both input is 0 or one input is 1 and the other 0 then output will be 0
+- NAND (NOT AND): output 0 if all inputs are 1
+- XOR: output 1 only when one input out of its inputs is 1. If both inputs are 0 then output is 0, if both outputs are 1 then output is 0, if output is 1 0 then output is 1
+- NOR: 
 ### Flip-flops
 
 ## What are FPGAs?
@@ -84,6 +92,10 @@ When a device is connected to a battery, a reaction called a _electrochecmical r
 - Electrode: https://en.wikipedia.org/wiki/Electrode
 - Resistors: https://eepower.com/resistor-guide/resistor-fundamentals/what-is-a-resistor/#
 - Resistors/ohms law: https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/all
+- Gates: https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:computers/xcae6f4a7ff015e7d:logic-gates-and-circuits/a/logic-gates
+- Gates: https://en.wikipedia.org/wiki/NAND_gate
+- Gates: https://logic.ly/lessons/xor-gate/
+- Gates: https://en.wikipedia.org/wiki/XOR_gate
 - Batteries: https://electronics.howstuffworks.com/everyday-tech/battery.htm
 - Capacitors: https://electronics.howstuffworks.com/capacitor.htm
 - FPGAs: https://ebics.net/how-fpgas-work/

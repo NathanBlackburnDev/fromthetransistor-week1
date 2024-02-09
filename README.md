@@ -37,4 +37,4 @@ Transistors are made out of semi conductor materials such as sillicon and german
 When you connect a voltage source across the two ends, with the positive source hooked up to the P-type side and the negative to the N-type side, this will create a forward bias and electrons will flow through the N-type to the P-type and back into the positive voltage source. The voltage source must be 0.7v or greater in order for the electrons to flow through.
 
 ### Reverse bias
-When you swap the voltage source around so the N-type is hooked to the positive source and the negative to the P-type, the electrons help in the electric field will be pulled back to their respective sides, where the holes are held back to the P-type and the electrons back to the N-type which causes the reverse bias.
+When you swap the voltage source around so the N-type is hooked to the positive source and the negative to the P-type, the electrons in the electric field will be pulled back to their respective sides, where the holes are held back to the P-type and the electrons back to the N-type which causes the reverse bias.

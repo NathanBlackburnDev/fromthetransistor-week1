@@ -48,8 +48,21 @@ The IC itself is tiny, the wafers of semiconductor and layers of copper it consi
 
 ![Screen Shot 2024-02-10 at 09 14 53 am](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/ddbfacdc-a6ca-4d73-a907-f1e2e7185116)
 
-An IC die is the circuit in its smallest possible form, too small to solder or connect. To make it easier to connect to the IC, the die is packaged. The IC package turns the delicate, tiny die, into the black chip you are indoubitably familiar with.
+An IC die is the circuit in its smallest possible form, too small to solder or connect. To make it easier to connect to the IC, the die is packaged. The IC package turns the tiny die into the black chip you are indoubitably familiar with.
 
+### IC packages
+The package is what encapsulates the IC die and splays it out into a device we can more easily connect to. Each outer connection on the die is connected via a tiny piece of gold wire to a pad or pin on the package. Pins are the silver, extruding terminals on an IC, which go on to connect to other parts of a circuit. These are extremly important because they are what go on to connect to the rest of the componenets and wires in a circuit. There are many different types of packages, each of which has unique dimensions, mounting-types and pin counts.
+
+![Screen Shot 2024-02-10 at 09 25 41 am](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/094780e0-7718-4bae-b73f-991bd0561264)
+
+### Logic gates, Timers, Shift registers etc.
+Logic gates can be packaged into their own integrated circuit. Some logic gate ICs might contain a handful of gates in one package, like this quad input AND gate:
+
+![Screen Shot 2024-02-10 at 09 28 06 am](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/00cd91e6-dce7-4ff4-ae95-f9362db0703a)
+
+Logic gates can be connected inside an IC to create timers, counters, latches (sort of similar to flip-flops), shift registers, and other basic logic circuitry.
+### Microcontrollers, Microprocessors, FPGAs etc.
+Microcontrollers, Microprocessors and FPGAs are all packing millions and billions of transistors into a tiny chip, they are all ICs. These components exist in a wide range of functionality, complexity and size; from an 8 bit microcontroller like the [ATmega32](https://www.microchip.com/en-us/product/atmega32) in an [Arduino](https://www.arduino.cc/), to a complex 64 bit, multi core processor organizing everything in your computer. 
 ### Resistors
 The resistor is a passive electrical component that creates resistance in the flow of electric current. They are used in almost all electrical networks and electronic circuits. The resistance is measured in ohms (Ω). Electrical flow will pass through the resistor and the resistor will restrict the flow of the electric current. You can think of it like water flowing through a wide pipe, if the pipe at some point becomes very short the the resistance of the flowing water increases and thus less water comes through, the same applies here.
 

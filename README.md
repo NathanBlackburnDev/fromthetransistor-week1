@@ -111,10 +111,8 @@ FPGAs consist of many logic blocks, each typically consisting of flip-flops and 
 
 ### How does FPGA programming work?
 
-### How are FPGAs buildable using transistors?
-
-### How are integrated circuits really just collections of transistors?
-
+### How are FPGAs buildable using transistors? How are they just a package of transistors?
+As mentioned briefly above, FPGAs are really just a nice little collection of millions and even billions of transistors that come together to form an IC, of which an FPGA is a type of IC. Of course there will be other components but the transistor is arguably the most important one. Transistors can be used to build logic gates which enable you to perform basic logical operations. They can also be used as resistors and amplifiers. Metal-oxide-semiconductor (MOS) transistors can be used as memory cell storage elements, as well transistors can store 1 bit of information, so those billions of transistors inside the FPGA can be used to store 1 bit of information each, be used to perform logical operations by forming gates that take an input and result in a logical output, control the flow of electrons through the circuit, all of which when combined form the FPGA.
 ## Emulation and its advantages
 
 ## Extra reading
@@ -147,5 +145,7 @@ When a device is connected to a battery, a reaction called a _electrochecmical r
 - Capacitors: https://electronics.howstuffworks.com/capacitor.htm
 - FPGAs: https://ebics.net/how-fpgas-work/
 - FPGAs: https://www.arm.com/glossary/fpga
+- FPGAs: https://learn.sparkfun.com/tutorials/how-does-an-fpga-work/all
 - FPGAs: https://www.xilinx.com/products/silicon-devices/fpga/what-is-an-fpga.html
+- FPGA programming: https://www.xilinx.com/products/silicon-devices/resources/programming-an-fpga-an-introduction-to-how-it-works.html
 - IC: https://learn.sparkfun.com/tutorials/integrated-circuits/all

@@ -104,6 +104,13 @@ A CLB is the basic repeating logic resource on an FPGA. When linked together by 
 Flip-flop is a circuit that maintains a state until directed by input to change the state. A basic flip-flop can be constructed using four-NAND or four-NOR gates. Flip flop is popuarly known as the basic digital memory circuit. It has 2 states, 1 and 0. A flip-flop is a sequential circuit that consists of a bit. It is the smallest storage resource on the FPGA. Each flip-flop in a CLB is a binary register used to save logic states between clock cycles on an FPGA circuit.
 ### Look-up table (LUT)
 A LUT is a collection of gates hardwired on the FPGA. An LUT stores a predefined list of outputs for every combination of inputs. LUTs provide a fast way to retrieve the output of a logic operation because possible results are stored and then referenced rather than calculated. The LUTs in a CLB can also implement FIFOs. In laymens terms, an LUT is a table that determines what the output is for any given inputs.
+### Multiplexers
+A multiplexer (also called Mux) is another word for selector. It acts much like a railroad switch.
+
+![Screen Shot 2024-02-10 at 17 45 14 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/2484469f-7374-4a1e-af31-5acf458f1d1f)  ![Screen Shot 2024-02-10 at 17 45 22 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/abe8cf82-56e6-4ecb-895f-826c5efb0d6c)
+
+
+
 ## What are FPGAs?
 Field Programmable Gate Arrays (FPGAs) are semiconductor devices that are based around a matrix of configurable logic blocks (CLBs) connected via programmable interconnects that allow the designer to connect blocks and configure them to perform everything from simple logic gates to complex functions. FPGAs can be reprogrammed to desired application or functionality requirements after manufacturing. This feature distinguishes FPGAs from Application Specific Integrated Circuits (ASIC), which are custom manufactured for specific design tasks. Although one-time programmable (OTP) FPGAs are available, the dominant types are SRAM based which can be reprogammed as the design evolves. They are referred to as 'field programmable' because they provide customers the ability to reconfigure the hardware to meet specific use case requirements after the manufacturing process. This allows for features upgrades and bug fixes to be solved in situ which is especially useful for remote deployment. Full SoC designs containing multiple processes can be put onto a single FPGA device.
 

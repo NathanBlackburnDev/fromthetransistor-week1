@@ -104,6 +104,28 @@ A CLB is the basic repeating logic resource on an FPGA. When linked together by 
 Flip-flop is a circuit that maintains a state until directed by input to change the state. A basic flip-flop can be constructed using four-NAND or four-NOR gates. Flip flop is popuarly known as the basic digital memory circuit. It has 2 states, 1 and 0. A flip-flop is a sequential circuit that consists of a bit. It is the smallest storage resource on the FPGA. Each flip-flop in a CLB is a binary register used to save logic states between clock cycles on an FPGA circuit.
 ### Look-up table (LUT)
 A LUT is a collection of gates hardwired on the FPGA. An LUT stores a predefined list of outputs for every combination of inputs. LUTs provide a fast way to retrieve the output of a logic operation because possible results are stored and then referenced rather than calculated. The LUTs in a CLB can also implement FIFOs. In laymens terms, an LUT is a table that determines what the output is for any given inputs.
+
+One of the features that make FPGA families differ from, each other is their logic resource. For example, each CLB of [Spartan-II FPGAs](https://docs.xilinx.com/v/u/en-US/ds001) is comprised of two slices, each with two LUTs. The [Spartan 6](https://docs.xilinx.com/v/u/en-US/ds001) has two slices with four LUTs each. Internally, LUTs comprise of 1-bit memory cells (hold either 1 or 0) and a set of multiplexers. One value among these SRAM bits will be available at the LUTs output depending on the values fed to the control lines of the multiplexers. The numbher of inputs available for a LUT detemine its size. In general, a LUT with _n_ inputs is seen to comprise of 2 ** n:1 multiplexer
+
+![Screen Shot 2024-02-10 at 19 10 47 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/ce2e5263-f8f1-429d-9801-9f7f90fdb394)
+
+The above shows a 2 input LUT comprising of 4 SRAM bits and a 4:1 Mux.
+### Implementation of logic functions using LUT
+FPGA makes use of its LUTs as a preliminary resource to implement any logical function. This is actually a two step process. At first, the output values for each combination of input varaibles constituting the boolen function (truth table) are stored in the SRAM cells of the LUT. After this, depending on the combination of input variables supplied by the user, the appropriate memory bit will appear at LUT's output pin. This is due to the fact that the user provided input bits act as the select lines for the multiplexers present inside the LUTs.
+
+Suppose we want to realize a boolean function of four input variables A, B, C and D using a 4-input LUT. Here, let the output high only when any of the two input variables are one. The truth table corresponding to this is show below.
+
+![Screen Shot 2024-02-10 at 19 29 14 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/3ace4d9e-230c-44df-80e8-a41619b64bec)
+
+While realizing this function using an FPGA, A, B, C and D will be the inputs to the LUT. Next, the values of the output variable for each of their combination will be stored in the SRAM cells. Now, if ABCD = 0101 then the output of the LUT (column Y) will take the value of 1 as the content of the sixth memory cell makes it way to the output pin (shown by red line)
+
+![Screen Shot 2024-02-10 at 19 36 39 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/14a1b6ab-658c-4347-af7a-2096834f63a5)
+
+### Importance of LUTs
+Assume we have to compute a function like output the first 1001 fibonnaci numbers, this process is computationally expensive and thus inefficent, especially since the range is large. Instead we can pre-compute the cosines for all the possible inputs within the range and store them in a LUT. After this, computing any of the first 1001 fibonnaci numbers would invole the action of fetching (not computing) the corresponding value from the look-up table. This would greatly reduce the run time and make it much more efficient. 
+
+In addition, note that the SRAM cells of the LUTs are one of the important factors which contribute to the reconfigurability of the FPGAs. This is because the configuration bits consulting them can be changed each time the device is powered up, which in turn changes their functionality. For example, the LUT acting as an adder can be made to behave as a subtractor just by [change values stored in its SRAM cells](https://uweb.engr.arizona.edu/~rlysecky/courses/ece274-05f/lectures/lecture23.pdf). This is a bit like a double edged swordm as almost all LUT operations are prone to glitches.
+
 ### Multiplexers
 A multiplexer (also called Mux) is another word for selector. It acts much like a railroad switch.
 
@@ -116,6 +138,10 @@ Field Programmable Gate Arrays (FPGAs) are semiconductor devices that are based 
 FPGAs consist of many logic blocks, each typically consisting of flip-flops and logic functions and a routing network connecting the logic blocks. With FPGAs, you can redefine each logic block and the connections between connections that can be used to build complex digital logic ciruits without physically connecting individual gates and flip-flops.
 
 ![Screen Shot 2024-02-10 at 18 12 07 pm](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/4350bbad-400d-44a9-b2bd-f16b2cf2ae95)
+
+- CLBs shown as blue boxes above are the resources of FGPA meant to implement logic functions. Each CLB is comprised of a set of slices which are further decomposable into a definite nuber of LUTs, flip-flops (FFs) and Muxes
+- I/O blocks (IOBs) available at FPGA periphery facilitate external connections. These programmable blocks carry signals to or from an FPGA chip. The IOBs are the green rectangles on the edge, but still inside the FPGA
+- Switch matrix (red lines) is an interconnecting wire-like arrangment within FPGA. These offer connectivity for the CLBs or provide dedicated low impendance, minimum delay paths
 
 ### How does FPGA programming work?
 FPGA programming uses a HDL to manipulate circuits depending on what capabilites you want the device to have. The process is different from programming a CPU or GPU, since you aren't writing a program that will run sequentially. Instead, you are using a HDL to create circuits and physically change the hardware depending on what you want it to do. The process is similar to programming software in that you write code that is turned into a binary file and loaded onto the FPGA, but the outcome is that the HDL makes physical changes to the hardware, rather than strictly optimizng the device to run software. A program on an FPGA pieces together lower-level elements like logic gates and memory blocks, which work in concert to complete a task. Because you're manipulating the hardware from the ground up, FPGAs allow a great deal of flexibility. You can adjust basic functions such as memory or power usage depending on the task.
@@ -135,7 +161,14 @@ When a device is connected to a battery, a reaction called a _electrochecmical r
 ### Anode
 - An electrode where an oxidation reaction occurs (loss of electrons for the electroactive species)
 ### Oxidation
-- An oxidation reaction is an electrochemical reaction that produces electrons.
+- An oxidation reaction is an electrochemical reaction that produces electrons
+### SRAM and DRAM
+- There are two types of RAM:
+  _ Static access random memory
+  _ Dynamic access random memory
+- With DRAM, the bits are stored in cells that consist of one capacitor and one transistor. So due to capacitor leakage, DRAM needs to be refreshed often. Therefore, DRAM is 10x slower than SRAM. The average access time of DRAM is about 60 nanoseconds, while SRAM can give access times as low as 8 nano seconds. SRAM is faster and typically used for cache. DRAM is less expensive and has a higher density and has a primary use as a main processor memory/cache. With SRAM, each cell consists of six transistors and can store one single bit.
+### FPGA slices
+- Hardware resources on an FPGA are indicated by the number of slices that FPGA has, where a slice is comprised of LUTs and FFs
 ## References
 - Transistors: https://www.youtube.com/watch?v=J4oO7PT_nzQ
 - Transistors: https://builtin.com/hardware/transistor
@@ -162,3 +195,7 @@ When a device is connected to a battery, a reaction called a _electrochecmical r
 - FPGA programming: https://www.xilinx.com/products/silicon-devices/resources/programming-an-fpga-an-introduction-to-how-it-works.html
 - FPGA programming: https://www.xilinx.com/products/silicon-devices/resources/programming-an-fpga-an-introduction-to-how-it-works.html
 - IC: https://learn.sparkfun.com/tutorials/integrated-circuits/all
+- SRAM: https://en.wikipedia.org/wiki/Static_random-access_memory
+- SRAM cells: https://www.hackster.io/salvador-canas/a-practical-introduction-to-sram-memories-using-an-fpga-i-3f3992
+- FPGA slices: https://www.ni.com/en/support/documentation/supplemental/18/slices-on-an-fpga-chip.html
+- LUTs: https://www.allaboutcircuits.com/technical-articles/purpose-and-internal-functionality-of-fpga-look-up-tables/

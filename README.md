@@ -40,7 +40,16 @@ When you connect a voltage source across the two ends, with the positive source 
 When you swap the voltage source around so the N-type is hooked to the positive source and the negative to the P-type, the electrons in the electric field will be pulled back to their respective sides, where the holes are held back to the P-type and the electrons back to the N-type which causes the reverse bias.
 
 ## Integrated circuits
-IC is a collection of electronic components such as 
+IC is a collection of electronic components such as resistors, transistors, capacitors etc. all stuffed into a tiny chip and connected together to achieve a common goal. They come in different flavours such as single-circuit logic gates, microcontrollers, microprocessors, FPGAs. The inside of an IC is a layering of semiconductor wafers, copper and other materials, which interconnect to form transistors, resistors, or other componenets in a circuit. The cut and formed combination of these wafers is called a die.
+
+![Screen Shot 2024-02-10 at 09 13 22 am](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/5db5af14-64f3-498a-8d4c-b16a35adcafb)
+
+The IC itself is tiny, the wafers of semiconductor and layers of copper it consists of are incredibly thin. The connections between the layers are very intricate.
+
+![Screen Shot 2024-02-10 at 09 14 53 am](https://github.com/NathanBlackburnDev/fromthetransistor-week1/assets/116575260/ddbfacdc-a6ca-4d73-a907-f1e2e7185116)
+
+An IC die is the circuit in its smallest possible form, too small to solder or connect. To make it easier to connect to the IC, the die is packaged. The IC package turns the delicate, tiny die, into the black chip you are indoubitably familiar with.
+
 ### Resistors
 The resistor is a passive electrical component that creates resistance in the flow of electric current. They are used in almost all electrical networks and electronic circuits. The resistance is measured in ohms (Ω). Electrical flow will pass through the resistor and the resistor will restrict the flow of the electric current. You can think of it like water flowing through a wide pipe, if the pipe at some point becomes very short the the resistance of the flowing water increases and thus less water comes through, the same applies here.
 
@@ -48,7 +57,7 @@ The resistor is a passive electrical component that creates resistance in the fl
 
 The voltages between two points is equal to the current between the two points * the voltage
 ### Capacitors
-A capacitor is similar to a battery, with the main difference being 
+A capacitor is similar to a battery, with the main difference being a capacitor cannot produce new electrocs, it only stores them. That is the reason as to why a capacitor is called such, because it has the capacity to store energy. Inside a capacitor, the terminals connect to two metal plates seperated by a non-conducting substance, or dielectric.
 ### Logic gates
 Computers user logic gates to transform the 1s and 0s from input wires. A logic gate accepts input then outputs a result based on their state.
 Some logic gates:
@@ -79,15 +88,13 @@ Some logic gates:
 ### Configurable Logic Blocks (CLB)
 A CLB is the basic repeating logic resource on an FPGA. When linked together by routing resources, the components in CLBs execute complex logic functions, implement memory functions and synchronize code on the FPGA. CLBs contain smaller componenets like flip-flops, look-up tables (LUTs), and multiplexers.
 ### Flip-flops
-Flip-flop is a circuit that maintains a state until directed by input to change the state. A basic flip-flop can be constructed using four-NAND or four-NOR gates. Flip flop is popuarly known as the basic digital memory circuit. It has 2 states, 1 and 0. A flip-flop is a sequential circuit that consists of a bit. A flip-flop is the smallest storage resource on the FPGA. Each flip-flop in a CLB is a binary register used to save logic states between clock cycles on an FPGA circuit.
+Flip-flop is a circuit that maintains a state until directed by input to change the state. A basic flip-flop can be constructed using four-NAND or four-NOR gates. Flip flop is popuarly known as the basic digital memory circuit. It has 2 states, 1 and 0. A flip-flop is a sequential circuit that consists of a bit. It is the smallest storage resource on the FPGA. Each flip-flop in a CLB is a binary register used to save logic states between clock cycles on an FPGA circuit.
 ### Look-up table (LUT)
-
+A LUT is a collection of gates hardwired on the FPGA. An LUT stores a predefined list of outputs for every combination of inputs. LUTs provide a fast way to retrieve the output of a logic operation because possible results are stored and then referenced rather than calculated. The LUTs in a CLB can also implement FIFOs.
 ## What are FPGAs?
 Field Programmable Gate Arrays (FPGAs) are semiconductor devices that are based around a matrix of configurable logic blocks (CLBs) connected via programmable interconnects that allow the designer to connect blocks and configure them to perform everything from simple logic gates to complex functions. FPGAs can be reprogrammed to desired application or functionality requirements after manufacturing. This feature distinguishes FPGAs from Application Specific Integrated Circuits (ASIC), which are custom manufactured for specific design tasks. Although one-time programmable (OTP) FPGAs are available, the dominant types are SRAM based which can be reprogammed as the design evolves. They are referred to as 'field programmable' because they provide customers the ability to reconfigure the hardware to meet specific use case requirements after the manufacturing process. This allows for features upgrades and bug fixes to be solved in situ which is especially useful for remote deployment. Full SoC designs containing multiple processes can be put onto a single FPGA device.
 
 FPGAs consist of many logic blocks, each typically consisting of flip-flops and logic functions and a routing network connecting the logic blocks. With FPGAs, you can redefine each logic block and the connections between connections that can be used to build complex digital logic ciruits without physically connecting individual gates and flip-flops.
-
-### The flexibility of FPGAs
 
 ### How does FPGA programming work?
 
@@ -121,6 +128,7 @@ When a device is connected to a battery, a reaction called a _electrochecmical r
 - Gates: https://en.wikipedia.org/wiki/NAND_gate
 - Gates: https://logic.ly/lessons/xor-gate/
 - Gates: https://en.wikipedia.org/wiki/XOR_gate
+- CLB: https://www.ni.com/docs/en-US/bundle/labview-nxg-fpga-targets/page/configurable-logic-blocks.html
 - Flip-flops: https://www.geeksforgeeks.org/flip-flop-types-their-conversion-and-applications/
 - Batteries: https://electronics.howstuffworks.com/everyday-tech/battery.htm
 - Capacitors: https://electronics.howstuffworks.com/capacitor.htm

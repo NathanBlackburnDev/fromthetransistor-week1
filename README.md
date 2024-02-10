@@ -112,7 +112,9 @@ FPGAs consist of many logic blocks, each typically consisting of flip-flops and 
 ### How does FPGA programming work?
 
 ### How are FPGAs buildable using transistors? How are they just a package of transistors?
-As mentioned briefly above, FPGAs are really just a nice little collection of millions and even billions of transistors that come together to form an IC, of which an FPGA is a type of IC. Of course there will be other components but the transistor is arguably the most important one. Transistors can be used to build logic gates which enable you to perform basic logical operations. They can also be used as resistors and amplifiers. Metal-oxide-semiconductor (MOS) transistors can be used as memory cell storage elements, as well transistors can store 1 bit of information, so those billions of transistors inside the FPGA can be used to store 1 bit of information each, be used to perform logical operations by forming gates that take an input and result in a logical output, control the flow of electrons through the circuit, all of which when combined form the FPGA.
+FPGAs are an array of reconfigurable gates. They are built as an array of CLBs. Each CLB can be configured to perform combinational or sequential functions. 
+
+As mentioned briefly above, FPGAs are really just a nice little collection of millions and even billions of transistors that come together to form an IC, of which an FPGA is a type of IC. Of course there will be other components but the transistor is arguably the most important one. Transistors can be used to build logic gates which enable you to perform basic logical operations. They can also be used as resistors and amplifiers. Metal-oxide-semiconductor (MOS) transistors can be used as memory cell storage elements, as well transistors can store 1 bit of information, so those billions of transistors inside the FPGA can be used to store 1 bit of information each, be used to perform logical operations by forming gates that take an input and result in a logical output, control the flow of electrons through the circuit, all of which when combined form the FPGA. FPGAs are esentially an array of reconfigurable gates. They are built as an array of CLBs, whereby each CLB can be configured to perfrom combinational or sequential functions. CLBs can be built with transistors by grouping together transistors to form a CLB. This just means that FPGAs and any IC really can be built just with transistors, as the transistors come together to form logic gates used to perform logical operations, CLBs used to perform complex functions, store memory, and enable communication between all electrical componenets.
 ## Emulation and its advantages
 
 ## Extra reading
@@ -146,6 +148,8 @@ When a device is connected to a battery, a reaction called a _electrochecmical r
 - FPGAs: https://ebics.net/how-fpgas-work/
 - FPGAs: https://www.arm.com/glossary/fpga
 - FPGAs: https://learn.sparkfun.com/tutorials/how-does-an-fpga-work/all
+- FPGA + CLB: https://www.sciencedirect.com/topics/computer-science/configurable-logic-block
 - FPGAs: https://www.xilinx.com/products/silicon-devices/fpga/what-is-an-fpga.html
+- FPGA programming: https://www.xilinx.com/products/silicon-devices/resources/programming-an-fpga-an-introduction-to-how-it-works.html
 - FPGA programming: https://www.xilinx.com/products/silicon-devices/resources/programming-an-fpga-an-introduction-to-how-it-works.html
 - IC: https://learn.sparkfun.com/tutorials/integrated-circuits/all

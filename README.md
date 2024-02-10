@@ -163,9 +163,7 @@ When a device is connected to a battery, a reaction called a _electrochecmical r
 ### Oxidation
 - An oxidation reaction is an electrochemical reaction that produces electrons
 ### SRAM and DRAM
-- There are two types of RAM:
-  _ Static access random memory
-  _ Dynamic access random memory
+- There are two types of RAM: Static access random memory and Dynamic access random memory
 - With DRAM, the bits are stored in cells that consist of one capacitor and one transistor. So due to capacitor leakage, DRAM needs to be refreshed often. Therefore, DRAM is 10x slower than SRAM. The average access time of DRAM is about 60 nanoseconds, while SRAM can give access times as low as 8 nano seconds. SRAM is faster and typically used for cache. DRAM is less expensive and has a higher density and has a primary use as a main processor memory/cache. With SRAM, each cell consists of six transistors and can store one single bit.
 ### FPGA slices
 - Hardware resources on an FPGA are indicated by the number of slices that FPGA has, where a slice is comprised of LUTs and FFs

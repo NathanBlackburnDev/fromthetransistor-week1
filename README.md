@@ -1,5 +1,5 @@
 # Theory of transistors, about FPGAs and ICs
-This README talks is from week 1 of [from the transistor by geohot](https://github.com/geohot/fromthetransistor). It talks about transistors, FPGAs, ICs and the electrical components/concepts needed to understand the content.
+This README contnet is from week 1 of [from the transistor by geohot](https://github.com/geohot/fromthetransistor). It talks about transistors, FPGAs, ICs and the electrical components/concepts needed to understand the content.
 ## What are transistors?
 Transistors are small electronic components with two main functions: switch circuits on or off and amplify signals. Small lower power transistors will be in a resin case but a higher power transistor will have a metal/resin case which is used to remove the heat from the transistor. Transistors have 3 pins, 1 is the emitter (E), 1 is the base (B) and the final one is the collector (C). The emitter serves as the source of electrons, the base as the control terminal (essentially it controls the flow of electrons through the transistor) and collector which is the drain for the electrons. 
 ### Why use transistors?
